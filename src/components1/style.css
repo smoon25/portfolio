@@ -1,0 +1,5 @@
+nav {  width: 100%;  background: #efefef;  padding: 25px 0; }
+nav ul { display: flex; justify-content: center;}
+nav ul li {margin-right: 30px; }
+nav ul li a {transition: 0.3s;}
+nav ul li a:hover { color:tomato }

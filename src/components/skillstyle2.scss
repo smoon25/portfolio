@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Lato:wght@700&family=Montserrat&family=Oswald:wght@300&family=Poppins:wght@300;400&family=Raleway:wght@200&family=Ubuntu:wght@300&display=swap');
+ 
+.skill {
+    width: 100%;
+    background-color: #DBCDF0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    .getback{
+        color: white;
+        margin: 0 auto;
+        width: auto;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 50px;
+      }
+      
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+      }
+
+      li {
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem;
+        // transform: skewY(3deg);
+        // justify-content: center;
+        // align-items: center;
+
+      }
+
+      img {
+        padding: 0px 30px;
+        width: 6.875rem;
+        height: 6.875rem;
+        -webkit-filter: drop-shadow(5px 5px 5px #222);
+        filter: drop-shadow(5px 10px rgba(0, 0, 0, 0.24));
+        padding-bottom: 1.5rem;
+        margin: 1px;
+      }
+
+      img:hover {
+        // opacity: .5;
+        transform: scale(1.1); 
+        transition: 0.3s;
+      }
+
+      span {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        color: black;
+      }
+    
+    
+      h1 {
+        text-align: center;
+        margin: 0;
+        font-family: 'Raleway', sans-serif;
+        font-size: 60px;
+        font-weight: 600;
+        padding-bottom: 50px;
+        text-shadow: -1px 1px 0 #41ba45,
+          1px 1px 0 #c63d2b,
+         1px -1px 0 #42afac,
+        -1px -1px 0 #c6c23f;
+    
+      }
+
+ }
+
+ .resume {
+    width: 100%; margin: 0 auto; height: 100vh;
+
+    .box{
+       background: white;
+       padding: 3rem 5%;
+       display: flex; 
+
+    }
+
+    h2 {
+        margin-top: 100px;
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase; 
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    img {
+        width: 50rem;
+        height: 28.125rem;
+        padding-right: 3.125rem;
+    }
+
+    .arrowLeft {
+        position:relative;
+        bottom:250px;
+        left: 30px;
+        color:white;
+        font-size: 25px;
+        opacity:0.8;
+    }
+
+    .arrowLeft:hover {
+        cursor: pointer
+    }
+
+    .arrowRight {
+        position:relative;
+        bottom:250px;
+        left: 725px;
+        color:white;
+        font-size: 25px;
+        opacity:0.8;
+
+    }
+
+    .arrowRight:hover {
+        cursor: pointer
+    }
+
+
+    p {
+        font-size: 15px;
+        color: black;
+    }
+
+        
+
+ }
+
+ .sidebar {
+  right: 0px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  button {
+    position:relative;
+    width:5rem;
+    height:5rem;
+    cursor: pointer; 
+    border: 0.1rem solid;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    float: right;
+    right: 0px;
+    // z-index:10;
+    bottom: 20rem;
+    margin-bottom: 10px;
+
+    &:hover {
+      background-color: #c9f2fb;
+      // You can add other hover styles here as well
+    }
+
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 50px;
+  }
+ }
+
+ @media (max-width:1200px) {
+  
+ }
+ @media (min-width: 400px) and (max-width: 1199px) {
+  .sidebar {
+    button {
+      width: 3rem;
+      height: 3rem;
+      // bottom: ;
+    }
+
+    img {
+      height: 2rem;
+    }
+  }
+
+  .resume {
+    .box{
+      display: block; 
+
+   }
+
+   img {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+   }
+  }
+
+  .education {
+    width: 100%;
+  }
+
+
+  .skill {
+
+
+  }
+ }
+
